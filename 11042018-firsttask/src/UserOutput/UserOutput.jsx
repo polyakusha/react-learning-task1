@@ -8,6 +8,7 @@ const userOutput = (props) => {
             <p className="UserTitle">Who is it?</p>
             <p className="UserName">{props.username}</p>
             <img className="UserImg" src={props.picture} alt={props.username}/>
+            <p>{props.symbols}</p>
         </div>
     )
 }
