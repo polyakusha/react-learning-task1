@@ -1,22 +1,30 @@
 import React from 'react';
 
+const red = {
+    color: 'red'
+}
+
+const green = {
+    color: 'green'
+}
+
 const validationComponent = (props) => {
     const inputLength = props.symbols;
     let validationMessage = null;
 
     if (inputLength === 7) {
         validationMessage = (
-            <p>Bingo!</p>
+            <p style={green}>Bingo!</p>
         )
     }
     else if (inputLength > 7) {
         validationMessage = (
-            <p>Text too long</p>
+            <p style={red}>Text too long</p>
         )
     }
     else {
         validationMessage = (
-            <p>Text too short</p>
+            <p style={red}>Text too short</p>
         )
     }
 
